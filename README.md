@@ -1,16 +1,17 @@
-Sigue estos pasos antes de correr el programa
+_Follow these steps before running the program_
 
-- En una terminal $python -m venv env
-- Si estás en VSCode haz esto:
-- Ctrl + Shift + P y busca por: "Python select interpreter"
-- Añadirás una ruta (path) y le vas a poner ".\env\Scripts\python.exe"
-- Ctrl + Ñ para abrir una terminal. Si te sale "(env) PS X:\\..." vas por buen camino
-- Ahora en la misma terminal pegamos estos comandos de Python:
+- In a terminal $python -m venv env
+- If you are in VSCode do this:
+- Ctrl + Shift + P and search for: "Python select interpreter"
+- You will add a route (path) and you will put ".\env\Scripts\python.exe"
+- Ctrl + Ñ to open a terminal. If you get "(env) PS X:\\..." you are on the right track
+- Now in the same terminal we paste these Python commands:
 
-'''
-python.exe -m pip install --upgrade pip
-pip install googletrans==4.0.0rc1
-pip install requests
-'''
+``` powershell
+python.exe -m pip install --update pip\
+pip install googletrans==4.0.0rc1\
+pip installation requests
+```
 
-Ahora con Code Runner de VSCode ejecuta Python. Puedes crear un archivo JSON y ponerle la ruta absoluta del proyecto
+Now with VSCode's Code Runner it runs Python.\
+You can create a JSON file and put the absolute path of the project in it
