@@ -8,8 +8,8 @@ _Follow these steps before running the program_
 - Now in the same terminal we paste these Python commands:
 
 ``` powershell
-python.exe -m pip install --update pip\
-pip install googletrans==4.0.0rc1\
+python.exe -m pip install --update pip
+pip install googletrans==4.0.0rc1
 pip installation requests
 ```
 
