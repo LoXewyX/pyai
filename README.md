@@ -4,7 +4,7 @@ _Follow these steps before running the program_
 - If you are in VSCode do this:
 - Ctrl + Shift + P and search for: "Python select interpreter"
 - You will add a route (path) and you will put ".\env\Scripts\python.exe"
-- Ctrl + Ñ to open a terminal. If you get "(env) PS X:\\..." you are on the right track
+- Ctrl + Shift +  to open a terminal. If you get "(env) PS X:\\..." you are on the right track
 - Now in the same terminal we paste these Python commands:
 
 ``` powershell
