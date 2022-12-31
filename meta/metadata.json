@@ -1,11 +1,11 @@
 [
     {
         "bot": {
-            "name": "stargazer"
+            "name": "ai"
         },
         "app": {
-            "lang": "english",
-            "_v": "0.0.1"
+            "lang": "spanish",
+            "__v": 0
         }
     }
 ]

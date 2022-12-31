@@ -1,4 +1,4 @@
-import bin.Learn as Learn
+import bin.List as List
 import hook.Pool as p
 import re
 
@@ -13,15 +13,17 @@ class Loop():
             # Clean string from unwanted spaces, to lower, remove all special characters,
             # translate text to english and split each space
             i = re.sub(r'[^a-zA-Z0-9 ]', '',
-                       p.t(input('> '), src=p.lang, lang='en').strip().lower()
+                       p.t(input('> '), src='auto', lang='en').strip().lower()
                        ).split()
 
-            # print(i)
-
-            res = Learn.Learn.conditions(i)
+            res = List.Learn.conditions(i)
 
             if p.run:
-                if res != '':
+
+                # print('args', i)
+                # print('res', f'\'{res}\'')
+
+                if not(res == '' or len(i) == 0):
                     print('\t' + p.t(f'{p.botname} says') + ':')
                     print('\t' + p.t(res))
                 loop()

@@ -19,6 +19,8 @@ def t(trlt: str | list, src: str = 'en', lang: str = lang) -> str | list:
     def localtrans(lt: str):
         return translator.translate(lt, src=src, dest=lang).text
 
+    if len(trlt) == 0: return ''
+
     if type(trlt) == str:
         return localtrans(trlt)
 
@@ -34,6 +36,9 @@ def botInput(text: str, autoStrip: bool = True) -> str:
     return i
 
 
-def validateList(inpt: list, arr: list, num: str = 'auto') -> bool:
+def validateList(inpt: list, arr: list, num: str | int  = 'auto') -> bool:
     l = len(arr) if num == 'auto' else num
     return len(set(inpt).intersection(arr)) == l
+
+def listHasNext(i: list, inpt: str, num: int = 1) -> bool:
+    return inpt in i and len(i) > i.index(inpt) + num
