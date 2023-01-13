@@ -1,39 +1,34 @@
 _Follow these steps before running the program_
 
-- In a terminal [ Windows or Linux ]
+> :warning: If the command **python3** does not work for you try only **python**
+
+- In a Windows or Linux terminal, where "myenv" can be written as desired.
+
 ``` powershell
-python -m venv ${env}
+python3 -m venv myenv
 ```
-- If you are in VSCode do this:
+
+> **If you are in VSCode** try this:
 - Ctrl + Shift + P and search for: "Python select interpreter"
-- Now add this route ` .\${env}\Scripts\python.exe `
+- Now add this route ` .\myenv\Scripts\python.exe `
 - ``` Ctrl + Shift + ` ``` to open a terminal
 - Now in the same terminal we paste these Python commands:
 
-> __Note__
-If you get ` (env) PS X:\\... ` you are on the right track
-
-Another way is activating it by yourself:
-
-- Windows:
+> __Note__ If you get ` (env) PS X:\\... `, you are on the right track!
+> **Otherwise** you can do it manually:
+- **Windows**
 ``` powershell
 .\env\bin\Activate.ps1
 ```
-- Linux:
+- **Linux**
 ``` bash
 source ./env/bin/activate
 ```
-
 ``` powershell
 python3 -m pip install --update pip
 pip install requirements.txt
 ```
-
-In case the requirements are not working.
-
-``` powershell
-pip install googletrans==4.0.0rc1 requests
-```
+> :warning: In case the **requirements.txt** file is not working `pip install googletrans==4.0.0rc1 requests`
 
 Once you had enabled the Virtual Enviroment can run your code by typing
 ```
