@@ -26,7 +26,7 @@ source ./env/bin/activate
 ```
 ``` powershell
 python3 -m pip install --update pip
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 > :warning: In case the **requirements.txt** file is not working `pip install googletrans==4.0.0rc1 requests`
 
