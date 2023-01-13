@@ -26,8 +26,13 @@ source ./env/bin/activate
 
 ``` powershell
 python3 -m pip install --update pip
-pip install googletrans==4.0.0rc1
-pip installation requests
+pip install requirements.txt
+```
+
+In case the requirements are not working.
+
+``` powershell
+pip install googletrans==4.0.0rc1 requests
 ```
 
 Once you had enabled the Virtual Enviroment can run your code by typing
